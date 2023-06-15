@@ -1,0 +1,31 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+      "size": "Large",
+      "text": "${Org}",
+      "type": "TextBlock",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "size": "medium",
+      "text": "Name"
+    },
+    {
+      "type": "Input.Text",
+      "id": "Name",
+      "isVisible": true,
+      "isRequired": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Execute",
+      "verb": "success",
+      "title": "Next"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.12",
+  "version": "1.1.9",
+  "id": "%MICROSOFT-APP-ID%",
+  "packageName": "com.microsoft.teams.samples",
+  "developer": {
+    "name": "Mukesh Kumar",
+    "websiteUrl": "https://example.azurewebsites.net",
+    "privacyUrl": "https://example.azurewebsites.net/privacy",
+    "termsOfUseUrl": "https://example.azurewebsites.net/termsofuse",
+    "mpnId": "1234589567"
+  },
+  "icons": {
+    "color": "icon-color.png",
+    "outline": "icon-outline.png"
+  },
+  "name": {
+    "short": "Mukesh TestBot",
+    "full": "Mukesh TestBot"
+  },
+  "description": {
+    "short": "Test Task Module Scenario",
+    "full": "Simple Task Module Scenario Test"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "%MICROSOFT-APP-ID%",
+      "needsChannelSelector": false,
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team",
+        "groupchat"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "team",
+            "personal",
+            "groupchat"
+          ],
+          "commands": [
+            {
+              "title": "Book",
+              "description": "Find and book a meeting space"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [ "%Valid Domain%" ]
+}
